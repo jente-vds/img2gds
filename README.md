@@ -5,7 +5,7 @@ Based on opencv-python (https://github.com/opencv/opencv-python), numpy (https:/
 
 ## Usage:
 ```
-$ python3 img2gds.py \<input\> \<pixel size [um]\> \<output\>
+$ python3 img2gds.py <input> <pixel size [um]> <output>
 ```
 ## Example:
 ```
