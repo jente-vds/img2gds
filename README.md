@@ -9,5 +9,5 @@ $ python3 img2gds.py \<input\> \<pixel size [um]\> \<output\>
 ```
 ## Example:
 ```
-python3 img2gds.py example.png 0.001 example.gds
+$ python3 img2gds.py example.png 0.001 example.gds
 ```
