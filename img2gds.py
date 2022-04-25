@@ -12,6 +12,7 @@ def main(filename, pixel_size, output):
     binaryImage = cv2.flip(binaryImage, 0) # Flip image vertically since upper left corner is coordinate basis
     contours, hierarchy = cv2.findContours(binaryImage, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_TC89_KCOS) # Extract coordinates of contours
     hierarchy = np.squeeze(hierarchy)
+    contours = list(contours)
     for i in range(len(contours)):
         contours[i] = np.squeeze(contours[i]).astype(float)*float(pixel_size) # Squeeze and correct dimensions
 
